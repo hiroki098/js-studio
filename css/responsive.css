@@ -1,0 +1,270 @@
+/*タブレット*/
+@media (max-width: 1024px) {
+
+  .header__inner {
+    padding: 0 75px;
+  }
+
+  .slides__inner {
+    padding: 30px 0 30px 75px;
+  }
+
+  .slides__sub-title {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.slides__text {
+  font-size: 14px;
+}
+
+.slides__btn {
+  margin: 30px 0 0 0;
+}
+
+.slides__item-left {
+  padding-left: 75px;
+}
+
+  .main {
+    padding: 0 90px;
+  }
+
+  .introduction__contents--inner {
+    padding: 30px 45px 70px 45px;
+  }
+
+  .faq__inner {
+    padding: 0 45px;
+  }
+
+  .footer__inner {
+    padding: 80px 75px 60px 75px;
+}
+
+}
+
+
+/*スマートフォン横*/
+@media (max-width: 768px) {
+
+
+  .header__inner {
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__gnav {
+    opacity: 0;
+    transition: 0.3s;
+    pointer-events: none;
+    }
+
+  .header__gnav.active {
+    opacity: 1;
+    pointer-events: auto;
+    width: 100%;
+    position: fixed;
+    background-color: #ffffff;
+    top: 80px;
+    left: 0;
+    transition: 0.3s;
+  }
+
+  .header__gnav a {
+    color: #ffffff;
+    }
+
+  .header__gnav.active a {
+    color: #555555;
+  }
+
+  .header__gnav-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header__gnav.active .header__gnav-item {
+    border-bottom: 1px solid #CCC;
+    margin: 0 0;
+    padding: 20px 0;
+  }
+
+  .header__gnav-item a {
+    display: block;
+  }
+
+  .header__gnav.active .header__gnav-item:last-child {
+    border-bottom: none;
+  }
+
+  .header__logo h1 {
+    white-space: nowrap;
+  }
+
+  .header__nav_toggle {
+    display: inline;
+    height: 80px;
+    width: 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  .header__nav_toggle_icon {
+    height: 2px;
+    width: 60%;
+    background-color: #3DB6D5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+  }
+
+  .header__nav_toggle_icon:nth-of-type(1) {
+    transform: translate(-50%, -15px);
+  }
+
+  .header__nav_toggle_icon:nth-of-type(3) {
+    transform: translate(-50%, 15px);
+  }
+
+  .header__nav_toggle.active .header__nav_toggle_icon:nth-of-type(1){
+    transform: rotate(45deg) translate(-50%, 0);
+    transform-origin: 0% 50%;
+    }
+
+  .header__nav_toggle.active .header__nav_toggle_icon:nth-of-type(2){
+    opacity: 0;
+    }
+
+  .header__nav_toggle.active .header__nav_toggle_icon:nth-of-type(3){
+    transform: rotate(-45deg) translate(-50%, 0);
+    transform-origin: 0% 50%;
+    }
+
+  .slides__inner {
+    padding: 30px 0 80px 0;
+    display: flex;
+    text-align: center;
+  }
+
+  .slides__item {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .slides__sub-title {
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+
+.slides__item-left {
+  padding-left: 0;
+}
+
+.slides__text {
+  text-align: center;
+}
+
+.slides__btn {
+  margin: 20px 0 50px 0;
+}
+
+  .main {
+    padding: 0 45px;
+  }
+
+  .activities__contents-inner {
+    text-align: center;
+    flex-direction: column-reverse;
+    padding: 40px 0;
+  }
+
+  .activities__contents2-inner {
+    text-align: center;
+    flex-direction: column;
+    padding: 40px 0;
+  }
+
+  .activities__contents3-inner {
+    text-align: center;
+    flex-direction: column-reverse;
+    padding: 40px 0;
+  }
+
+  .introduction__contents--inner {
+    padding: 30px 20px 70px 20px;
+  }
+
+  .faq__inner {
+    padding: 0 20px;
+  }
+
+  .footer__inner {
+    padding: 80px 40px 60px 40px;
+}
+
+.footer__left-item {
+  margin-right: 18px;
+}
+
+.footer__right-item {
+  margin-left: 18px;
+}
+
+}
+
+
+
+/*スマートフォン縦*/
+@media (max-width: 480px) {
+
+  .header__inner {
+    padding: 0 20px;
+  }
+
+  .slides__inner {
+    padding: 30px 0 40px 0;
+  }
+
+  .main {
+    padding: 0 20px;
+  }
+
+  .introduction__contents--inner {
+    padding: 30px 20px 70px 10px;
+  }
+
+  .faq__inner {
+    padding: 0 10px;
+  }
+
+  .footer__inner {
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 40px 20px 20px 20px;
+  }
+
+  .footer__left-list {
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+
+  .footer__left-item {
+    margin: 0 auto;
+}
+
+.footer__right-list {
+  justify-content: space-around;
+}
+
+  .footer__right-item {
+    margin: 0 auto;
+  }
+
+}
